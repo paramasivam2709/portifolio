@@ -1,0 +1,234 @@
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.2rem;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #00c3ff;
+}
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  border-left: 4px solid #00c3ff;
+  padding-left: 10px;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1a1a1a;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 15px;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #e0f7fa; /* Default background */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.card:nth-child(1) { background: #fce4ec; }   /* Pink */
+.card:nth-child(2) { background: #e8f5e9; }   /* Green */
+.card:nth-child(3) { background: #ede7f6; }   /* Purple */
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #00796b;
+}
+
+.card p {
+  font-size: 0.95rem;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 10px 10px;
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  nav a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+/* Background colors for sections */
+#about {
+  background: linear-gradient(to right, #fefcea, #f1da36); /* light yellow gradient */
+}
+
+#skills {
+  background: linear-gradient(to right, #e0f7fa, #b2ebf2); /* soft cyan gradient */
+}
+
+#projects {
+  background: linear-gradient(to right, #ede7f6, #d1c4e9); /* soft purple */
+}
+
+#contact {
+  background: linear-gradient(to right, #fff3e0, #ffe0b2); /* soft orange */
+}
+
+.form-section {
+  max-width: 400px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  border-radius: 12px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+form input {
+  padding: 0.6rem;
+  margin-top: 0.2rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button {
+  margin-top: 1.5rem;
+  padding: 0.6rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
+
+form p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+.home-button {
+  display: inline-block;
+  margin: 1.5rem auto 0.5rem auto;
+  padding: 0.5rem 1rem;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.home-button:hover {
+  background-color: #005fa3;
+}
+
+
