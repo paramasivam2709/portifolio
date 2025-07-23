@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Paramasivam Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+  <header>
+    
+    <nav>
+      <a href="#about">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+    </nav>
+  </header>
+
+  
+
+
+  <section class="about-section">
+    <div class="container">
+      <div class="about-header">
+        <img src="profile.jpg" alt="Profile Photo" class="profile-img" />
+        <div>
+          <h2>👨‍💻 About Me</h2>
+          <p>Hi, I'm <strong>Paramasivam</strong>, a passionate <strong>Front-End Developer</strong> building responsive and modern websites using HTML, CSS, JavaScript, and React.</p>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <h3>💡 What I Do</h3>
+        <ul>
+          <li>💻 Front-End Web Development</li>
+          <li>🎨 UI/UX Design</li>
+          <li>📱 Responsive Design</li>
+          <li>⚙️ React & JavaScript Projects</li>
+          <li>🌐 Website Optimization</li>
+        </ul>
+
+        <h3>🔧 Skills</h3>
+        <p>HTML | CSS | JavaScript | React | Git | Tailwind CSS | Figma | Bootstrap</p>
+
+        <h3>🎯 Goal</h3>
+        <p>To grow as a full-stack developer and contribute to impactful digital experiences.</p>
+
+        <a href="resume/paramasivam Resume (1).pdf" class="btn" download>📄 Download CV</a>
+
+        <div class="social-links">
+          <a href="https://github.com/paramasivam2709" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/parama-sivam-6b193b194/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://mail.google.com/mail/"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+  
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section company">
+      <p>Front-End Developer building responsive and modern websites using HTML, CSS, JavaScript, and React.</p>
+    </div>
+
+    <div class="footer-section links">
+      <h4>Quick links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">About Us</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">contact us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section projects">
+      <h4>Projects</h4>
+      <ul>
+        <li> Personal Assistant</li>
+        <li>Number plate Detection</li>
+        <li>Weather APP</li>
+        
+      </ul>
+    </div>
+
+    <div class="footer-section contact">
+      <h4>Get in touch</h4>
+      <p><i class="fa fa-map-marker"></i>Villupuram</p>
+      <p><i class="fa fa-envelope"></i> paramasivamb2000@gmail.com</p>
+      <p><i class="fa fa-phone"></i> +91 9655565209</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="acknowledgement">
+    </div>
+    <p>Copyright © 2025 paramasivam. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
+
+
