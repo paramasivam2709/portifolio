@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact us</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Paramasivam Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <section id="contact" class="fade-in">
-    <h2>Contact</h2>
-    <p>Email: paramasivamb2000@gmail.com</p>
-    <p>Phone: +91 9655565209</p>
-    <p>Location: Villupuram, India</p>
+  
+
+  <section class="form-section">
+    <h2>Contact Us</h2>
+
+    <div id="messageBox" class="message-box"></div>
+
+    <form id="contactForm">
+      <label>Name:</label>
+      <input type="text" id="name" required />
+
+      <label>Email:</label>
+      <input type="email" id="email" required />
+
+      <label>Message:</label>
+      <textarea id="message" rows="4" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+    <a href="index.html" class="home-button">← Home</a>
   </section>
+
+  <script src="contact.js"></script>
+  <script src="theme.js"></script>
 </body>
 </html>
